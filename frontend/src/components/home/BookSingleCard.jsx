@@ -15,7 +15,7 @@ const BookSingleCard = ({ book, reload }) => {
 
   return (
     <div className="relative px-4 py-2 m-4 border-2 border-gray-500 rounded-lg hover:shadow-xl">
-      <h2 className="absolute px-4 py-1 rounded-lg text-primary-content bg-primary top-1 right-2">
+      <h2 className="absolute px-4 py-1 rounded-lg text-primary-content bg-accent top-1 right-2">
         {book.publishYear}
       </h2>
       <h4 className="my-2 text-gray-500">ID: {book._id}</h4>

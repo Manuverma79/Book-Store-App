@@ -16,7 +16,7 @@ const BookModal = ({ book, onClose }) => {
           className="absolute text-3xl text-red-600 cursor-pointer right-6 top-6"
           onClick={onClose}
         />
-        <h2 className="px-4 py-1 rounded-lg bg-primary text-primary-content w-fit">
+        <h2 className="px-4 py-1 rounded-lg bg-accent text-primary-content w-fit">
           {book.publishYear}
         </h2>
         <h4 className="my-2 text-gray-500">{book._id}</h4>
