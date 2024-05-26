@@ -18,12 +18,14 @@ app.get("/", (request, response) => {
 
 app.use("/books", booksRoute);
 
+const PORT = process.env.PORT || 3000;
+
 mongoose
   .connect(process.env.mongoURl)
   .then(() => {
     console.log("App is Connected to Database");
-    app.listen(process.env.PORT, () => {
-      console.log(`App is listening to Port: ${process.env.PORT}`);
+    app.listen(PORT, () => {
+      console.log(`App is listening to Port: ${PORT}`);
     });
   })
   .catch((error) => {
