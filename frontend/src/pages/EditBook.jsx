@@ -55,7 +55,7 @@ const EditBook = () => {
   return (
     <div className="flex items-center justify-center w-full pt-10">
       <div className="flex flex-col items-center justify-center w-1/2 p-4 gap-11 rounded-2xl">
-        <div className="text-4xl text-center">Add New Book</div>
+        <div className="text-4xl text-center">Edit Book</div>
         <label className="w-full max-w-xs form-control">
           <div className="label">
             <span className="label-text">Add Title</span>
