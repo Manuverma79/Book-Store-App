@@ -9,6 +9,7 @@ const CreateBooks = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [publishYear, setPublishYear] = useState("");
+  const [desc, setDesc] = useState("Description not provided");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
@@ -18,6 +19,7 @@ const CreateBooks = () => {
       title,
       author,
       publishYear,
+      desc,
     };
     setLoading(true);
     axios
@@ -32,6 +34,7 @@ const CreateBooks = () => {
         enqueueSnackbar("Error", { variant: "error" });
         console.log(error);
       });
+    console.log(data);
   };
 
   return (
@@ -64,6 +67,16 @@ const CreateBooks = () => {
             type="text"
             placeholder="Type here"
             onChange={(e) => setPublishYear(e.target.value)}
+            className="w-full max-w-xs input input-bordered"
+          />
+          <div className="label">
+            <span className="label-text">Enter Description</span>
+            <span className="label-text-alt">Optional</span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            onChange={(e) => setDesc(e.target.value)}
             className="w-full max-w-xs input input-bordered"
           />
         </label>
