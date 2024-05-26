@@ -35,7 +35,7 @@ const Home = () => {
         <div className="justify-center flex-1">
           <a className="p-1 text-3xl">Book List</a>
         </div>
-        <div className="flex-none gap-2 right-2">
+        <div className="absolute flex-none gap-2 right-2">
           <Link to="/books/create">
             <button className="btn btn-ghost">
               Add New Book

@@ -97,12 +97,12 @@ const EditBook = () => {
               <span className="label-text">Enter Description</span>
               <span className="label-text-alt">Optional</span>
             </div>
-            <input
+            <textarea
               value={desc}
               type="text"
               placeholder="Type here"
               onChange={(e) => setDesc(e.target.value)}
-              className="w-full max-w-xs input input-bordered"
+              className="w-full max-w-xs textarea textarea-bordered"
             />
           </label>
         )}
