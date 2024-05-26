@@ -58,7 +58,7 @@ const Home = () => {
       </div>
       {loading ? (
         <Spinner />
-      ) : showType === false ? (
+      ) : showType === true ? (
         <BooksTable
           reload={() => {
             setReload(!reload);
